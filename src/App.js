@@ -117,11 +117,12 @@ function App() {
                     value={editInput}
                     onChange={(e) => setEditInput(e.target.value)}
                     onKeyDown={(e) => keyPressEdit(e, item.id)}
-                    onFocus={(e) => e.current.select()}
+                    onTouchStart={(e) => setEditInput(e.target.value)}
                   />
                   <button
                     className="save"
                     onClick={() => saveUpdatedTodo(item.id)}
+                    onTouchStart={() => saveUpdatedTodo(item.id)}
                   >
                     SAVE
                   </button>
