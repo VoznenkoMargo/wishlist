@@ -73,7 +73,7 @@ function App() {
         if (editInput.trim().length > 2) {
           item.item = editInput;
         } else {
-          alert('your text length must monre than 2 sybmols');
+          alert('your text length must more than 2 sybmols');
         }
       }
       return item;
