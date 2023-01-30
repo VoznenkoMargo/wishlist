@@ -133,6 +133,7 @@ function App() {
                 <button
                   className="close-delete"
                   onClick={() => deleteItem(item.id)}
+                  onTouchStart={() => deleteItem(item.id)}
                 >
                   &#10006;
                 </button>
@@ -142,6 +143,7 @@ function App() {
                 <button
                   className="update"
                   onClick={() => updateItem(item.id, item.item)}
+                  onTouchStart={() => updateItem(item.id, item.item)}
                 >
                   &#10000;
                 </button>
